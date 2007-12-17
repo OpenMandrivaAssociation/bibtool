@@ -17,7 +17,6 @@ Patch2:         %{name}-2.48.build.patch.bz2
 Provides:       %{Name}
 Obsoletes:      %{Name}
 BuildRequires:  tetex-latex
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 BibTeX provides an easy to use means to integrate citations and
