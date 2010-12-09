@@ -1,7 +1,7 @@
 %define name    bibtool
 %define Name    BibTool
 %define version 2.48
-%define release %mkrel 6
+%define release %mkrel 7
 
 Name:       %{name}
 Version:    %{version}
