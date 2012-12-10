@@ -57,3 +57,54 @@ install -m 644 Doc/bibtool.1 %{buildroot}%{_mandir}/man1
 %{_datadir}/%{name}
 %{_mandir}/man1/*
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 2.48-7mdv2011.0
++ Revision: 616753
+- the mass rebuild of 2010.0 packages
+
+* Wed Sep 02 2009 Thierry Vignaud <tv@mandriva.org> 2.48-6mdv2010.0
++ Revision: 424618
+- rebuild
+
+* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 2.48-5mdv2009.0
++ Revision: 243255
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tv@mandriva.org> 2.48-3mdv2008.1
++ Revision: 122379
+- kill re-definition of %%buildroot on Pixel's request
+- import bibtool
+
+
+* Tue Aug 01 2006 Guillaume Rousse <guillomovitch@mandriva.org> 2.48-3mdv2007.0
+- %%mkrel
+
+* Thu Jul 28 2005 Guillaume Rousse <guillomovitch@mandriva.org> 2.48-2mdk 
+- spec cleanup
+
+* Mon Jul 19 2004 Guillaume Rousse <guillomovitch@mandrake.org> 2.48-1mdk 
+- new version
+- rpmbuildupdate aware
+
+* Tue Sep 23 2003 Guillaume Rousse <guillomovitch@linux-mandrake.com> 2.47-2mdk
+- changed name to bibtool, mixed cases sucks
+- mdk optimisations
+
+* Tue May 06 2003 Guillaume Rousse <g.rousse@linux-mandrake.com> 2.47-1mdk
+- 2.47
+- data files in %%{_datadir}/%%{name}
+
+* Wed Jan 29 2003 Lenny Cartier <lenny@mandrakesoft.com> 2.46-2mdk
+- rebuild
+
+* Fri Dec 13 2002  Lenny Cartier <lenny@mandrakesoft.com> 2.46-1mdk
+- updated (noticed by Patrice Dumas)
+
+* Mon Sep 10 2001 Lenny Cartier <lenny@mandrakesoft.com> 2.44-1mdk
+- added in contribs by Guillaume Rousse <g.rousse@linux-mandrake.com> :
+    - first mdk release
