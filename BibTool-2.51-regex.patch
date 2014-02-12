@@ -1,0 +1,46 @@
+--- BibTool/rewrite.c.regex	2010-02-27 12:40:16.000000000 +0100
++++ BibTool/rewrite.c	2011-05-18 08:40:54.000000000 +0200
+@@ -24,7 +24,8 @@
+ #include <bibtool/rewrite.h>
+ 
+ #ifdef REGEX
+-#include <bibtool/regex.h>
++#define __USE_GNU
++#include <regex.h>
+ #endif
+ 
+  typedef struct rULE
+--- BibTool/AutoConf/makefile.in.regex	2010-04-02 17:47:35.000000000 +0200
++++ BibTool/AutoConf/makefile.in	2011-05-18 08:40:54.000000000 +0200
+@@ -220,9 +220,9 @@ NON_ANSI_DEFS = @DEFS@
+ REGEX_DIR  = regex-0.12
+ # 
+ 
+-REGEX_DEF  = -DREGEX -I$(REGEX_DIR) -I..
++REGEX_DEF  = -DREGEX
+ 
+-REGEX      = regex$(OBJ)
++REGEX      =
+ 
+ # -------------------------------------------------------
+ #  Kpathsea Library support.
+@@ -473,8 +473,8 @@ $(OFILES): $(MAKEFILE)
+ # __________________________________________________________________
+ #  Targets from the GNU Regular Expression Library.
+ 
+-regex$(OBJ): $(REGEX_DIR)$(DIR_SEP)regex.c $(MAKEFILE)
+-	$(CC) $(C_FLAGS) -I$(REGEX_DIR) -I.. $(NON_ANSI_DEFS) $(REGEX_DIR)$(DIR_SEP)regex.c $(DONT_LINK) -o $@
++#regex$(OBJ): $(REGEX_DIR)$(DIR_SEP)regex.c $(MAKEFILE)
++#	$(CC) $(C_FLAGS) -I$(REGEX_DIR) -I.. $(NON_ANSI_DEFS) $(REGEX_DIR)$(DIR_SEP)regex.c $(DONT_LINK) -o $@
+ 
+ 
+ bibtcl:
+@@ -503,7 +503,7 @@ test check:
+ 	(cd Test; $(MAKE))
+ 
+ libbib.a: $(OLIBFILES)
+-	$(AR) $@ $(OLIBFILES) regex.o
++	$(AR) $@ $(OLIBFILES)
+ 	$(RANLIB) $@
+ 
+ depend:

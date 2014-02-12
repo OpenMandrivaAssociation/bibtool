@@ -1,5 +1,2 @@
 sources:
-  "BibTool-2.48.tar.bz2": dbdeae69b66dd091039dd7e8897475b92ab3fd02
-  "bibtool-2.48.build.patch.bz2": 3b79bccf698b19dd5b44cd13b0f75469766f9641
-  "bibtool.configure.patch.bz2": 21cc0195f65cc9440d5bd8b4583e8571b9440618
-  "bibtool.makefile.patch.bz2": 055244c54090c0cbf42202d92b6dab01280e081c
+  BibTool-2.55.tar.gz: b36eee9929419a4d0a6d407adc60dbe0ffa9fce9
