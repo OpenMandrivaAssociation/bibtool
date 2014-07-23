@@ -2,12 +2,12 @@
 
 Summary:	A Tool for manipulating BibTeX data bases
 Name:		bibtool
-Version:	2.55
+Version:	2.57
 Release:	1
 License:	GPLv1+
 Group:		Publishing
 Url:		http://www.ctan.org/tex-archive/biblio/bibtex/utils/bibtool
-Source0:	ftp://ctan.tug.org/tex-archive/biblio/bibtex/utils/bibtool/%{oname}-%{version}.tar.gz
+Source0:	ftp://ctan.tug.org:21/tex-archive/biblio/bibtex/utils/bibtool/BibTool-%{version}.tar.gz
 Patch0:		BibTool-2.51-regex.patch
 BuildRequires:	texlive
 
@@ -48,4 +48,3 @@ install -d -m 755 %{buildroot}%{_mandir}/man1
 install -m 755 bibtool %{buildroot}%{_bindir}
 install -m 644 Lib/* %{buildroot}%{_datadir}/%{name}
 install -m 644 Doc/bibtool.1 %{buildroot}%{_mandir}/man1
-
