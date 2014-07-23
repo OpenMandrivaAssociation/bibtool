@@ -27,7 +27,7 @@ goes beyond the possibilities --- and intentions --- of BibTeX.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q -n %{oname}
+%setup -qn BibTool
 %patch0 -p1 -b .regex
 sed -i -e 's%^#!/usr/local/bin/tclsh%#! %{_bindir}/tclsh%' Tcl/bibtool.tcl
 sed -i -e 's%^#!/usr/local/bin/perl%#! %{_bindir}/perl%' Perl/bibtool.pl
