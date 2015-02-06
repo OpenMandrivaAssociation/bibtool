@@ -3,7 +3,7 @@
 Summary:	A Tool for manipulating BibTeX data bases
 Name:		bibtool
 Version:	2.55
-Release:	1
+Release:	2
 License:	GPLv1+
 Group:		Publishing
 Url:		http://www.ctan.org/tex-archive/biblio/bibtex/utils/bibtool
