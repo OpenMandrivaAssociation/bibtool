@@ -6,7 +6,7 @@ Version:	2.55
 Release:	2
 License:	GPLv1+
 Group:		Publishing
-Url:		http://www.ctan.org/tex-archive/biblio/bibtex/utils/bibtool
+Url:		https://www.ctan.org/tex-archive/biblio/bibtex/utils/bibtool
 Source0:	ftp://ctan.tug.org/tex-archive/biblio/bibtex/utils/bibtool/%{oname}-%{version}.tar.gz
 Patch0:		BibTool-2.51-regex.patch
 BuildRequires:	texlive
